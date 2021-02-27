@@ -1,8 +1,4 @@
 # sql-challenge
-<<<<<<< HEAD
-=======
-# sql-challenge
->>>>>>> 0a6183ca320ce65c3a9ac4c25ff521f1010de65f
 
 In this homework assignment for the Data Visualization bootcamp program, I learned the basics of designing, importing, and working with a database.
 
