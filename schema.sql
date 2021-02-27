@@ -1,3 +1,5 @@
+--SQL-CHALLENGE HOMEWORK SCHEMA SET UP. (RAN IN PGADMIN).
+
 DROP TABLE IF EXISTS salaries;
 DROP TABLE IF EXISTS dept_manager;
 DROP TABLE IF EXISTS dept_emp;
@@ -34,7 +36,7 @@ CREATE TABLE dept_emp (
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
 	dept_no VARCHAR(4) NOT NULL, 
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
-	PRIMARY KEY(dept_no, emp_no)
+	PRIMARY KEY(dept_no, emp_no) --COMPOSITE PRIMARY KEY (JUNCTION TABLE)
 );
 
 CREATE TABLE dept_manager (
@@ -42,10 +44,10 @@ CREATE TABLE dept_manager (
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
 	emp_no INTEGER NOT NULL, 
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
-	PRIMARY KEY(dept_no, emp_no)
+	PRIMARY KEY(dept_no, emp_no) --COMPOSITE PRIMARY KEY (JUNCTION TABLE)
 );
 
-
+--NOTE NO PRIMARY KEY. IS THIS PROBLEMATIC?
 CREATE TABLE salaries (
 	emp_no INTEGER NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),

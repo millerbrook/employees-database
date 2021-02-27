@@ -1,3 +1,6 @@
+--SQL-CHALLENGE HOMEWORK QUERIES
+--------------------------------
+
 --Query 1: List the following details of each employee: employee number, last name, first name, sex, and salary.
 --Uses a simple inner join to bring salary in
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
@@ -63,8 +66,6 @@ WHERE employees.emp_no IN
 
 --Query 7: List all employees in the Sales and Development departments, including their employee 
 --number, last name, first name, and department name.
---weird problem -- some employees listed in more than one department? so, should all departments
---be recorded for these employees
 SELECT employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
 FROM dept_emp AS de
 INNER JOIN departments ON
