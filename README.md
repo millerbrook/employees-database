@@ -1,6 +1,6 @@
-# sql-challenge
+# employees database
 
-In this homework assignment for the Data Visualization bootcamp program, I learned the basics of designing, importing, and working with a database.
+This project demonstrates database importing, design, and querying.
 
 The workflow involved beginning with looking at provided csv files and determining their relationships. This was done via quickdatabasediagrams.com, which generates ERD diagrams via basic instructions regarding the composition of tables. In designing the ERD, one nuance was junction tables, which have composite keys. Another nuance involved thinking through the one to many relationships of titles to employees, and understanding the complexities of designing a personnel database at an organization, like mine, that permits employees to hold multiple job titles and multiple salaries. These issues were not directly pertinent to this homework. The ERD is called sqlchallengeERD.pdf.
 
